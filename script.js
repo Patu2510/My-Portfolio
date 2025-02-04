@@ -1,10 +1,3 @@
-fetch('https://patu2510.github.io/My-Portfolio/video4.mp4')
-  .then(response => response.blob())
-  .then(blob => {
-    const video = document.querySelector('.back-video');
-    video.src = URL.createObjectURL(blob);
-  })
-  .catch(error => console.error('Video loading error:', error));
 const header = document.querySelector("header");
 
 window.addEventListener ("scroll", function() {
